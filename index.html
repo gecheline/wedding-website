@@ -8,11 +8,226 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/stars.css">
+    <!-- <link rel="stylesheet" href="style/stars.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Tangerine|VT323|Neucha|Fira+Mono|Share+Tech+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet">
-    <link rel="stylesheet" href="style/aos.css" />
+    <style>
+        body{
+    /* overflow: hidden; */
+    background-color:#041665;
+    /* margin: 0px; */
+    background-size:   cover;                 
+    background-repeat: no-repeat;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+  }
+
+body#mk {
+    font-family: 'Fira Mono', monospace;
+}
+
+.navbar {
+      padding: auto auto auto auto;
+      /* justify-content: center; */
+      width:100%;
+      background-color: whitesmoke !important;
+      color: #041665 !important;
+      z-index: 10 !important;
+  }
+
+.nav-link {
+    color: #041665 !important;
+  }
+.nav-link.active {
+    color: #3c52b3 !important;
+  }
+
+
+.invite {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    z-index: 1;
+    height: 80%;
+    max-height: 80%;
+}
+
+#stories {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+#imghp img {
+    /* height: 500px;
+    width: auto; */
+    opacity: 0.75;
+    padding: auto auto auto auto;
+    margin: auto auto auto auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.712), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* #imghp {
+    margin-right: -20%;
+} */
+
+#txthp {
+    /* margin-left: -10%;
+    width: 90%; */
+    width: 100%;
+    height: 100%;
+    padding: auto auto auto auto;
+    opacity: 0.75;
+}
+
+.angelafilip {
+    font-family: 'Tangerine', cursive;
+    font-size: 80pt;
+    text-shadow: 0px 0px 1px whitesmoke, 2px 2px 2px #faf5d765, 3px 3px 3px #f9baa94f;
+}
+
+#mk .angelafilip {
+    font-family: 'Neucha', cursive;
+    font-size: 60pt;
+    text-shadow: 0px 0px 1px whitesmoke, 2px 2px 2px #faf5d765, 3px 3px 3px #f9baa94f;
+}
+
+.and {
+    font-family: 'Tangerine', cursive;
+    font-size: 30pt;
+}
+
+hr.bowtie { 
+    background: url('pics/bowtie_white.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 10px;
+    border: 0;
+    position: relative;
+    opacity: 0.9;
+}
+hr.bowtie:before,
+hr.bowtie:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background:  white;
+    height: 2px;
+    top: 5px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.712), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+}
+hr.bowtie:before {
+    left: 2%;
+    right: 55%;
+    /* margin-right: 25px; */
+}
+hr.bowtie:after {
+    right: 2%;
+    left: 55%;
+    /* margin-left: 25px; */
+}
+
+#info {
+    font-family: sans-serif;
+    
+}
+
+section {
+    margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+    #imghp img {
+      width: 100%;
+      height: auto;
+      /* max-width: 100%;
+      max-height: auto; */
+    }
+
+    .container {
+        width: 95%;
+    }
+  }
+
+  @media (min-width: 769px) {
+    #imghp img {
+      height: 500px;
+      max-width: auto;
+    }
+
+    .container {
+        width: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #rsvp  {
+      height: 400px;
+      /* max-height: 45%; */
+    }
+  }
+
+  @media (min-width: 769px) {
+    #rsvp  {
+      height: 610px;
+      /* max-height: 45%; */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    embed-spotify iframe, .embed-spotify object, .embed-spotify embed {
+      max-height: 45%;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+.embed-container { 
+position: relative; 
+padding-bottom: 56.25%; 
+height: 100%;
+max-width: 100%; 
+max-height: 100%; 
+overflow: hidden; } 
+
+.embed-spotify {
+position: relative; 
+padding-top: 56.25%;
+padding-bottom: 56.25%; 
+height: 100%;
+max-width: 100%; 
+max-height: 100%; 
+overflow: hidden;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed,
+.embed-spotify iframe, .embed-spotify object, .embed-spotify embed 
+{ position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+padding: 2% 2% 2% 2%;}
+
+#rsvp, #info .card {
+    opacity: 0.8;
+    color: #041657;
+    margin-bottom: 3%;
+}
+
+#gallery {
+    margin-bottom: 10%;
+}
+
+#rsvp  {
+    /* max-height: 45%; */
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+  }
+    </style>
     <title>Angela & Filip</title>
   </head>
 
@@ -157,9 +372,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src='scripts/three.min.js'></script>
-    <script src="scripts/stars_1.js"></script>
-    <script src="scripts/view.js"></script>
-    <script src="scripts/stories_intro_1.js"></script>
+    <!-- <script src="scripts/stars.min.js"></script>
+    <script src="scripts/view.min.js"></script>
+    <script src="scripts/stories.min.js"></script> -->
+    <script>
+        !function(){"use strict";var e,t,n,i,o,r,a,d,c,s,E,w,l,u;function p(){var e=window.innerWidth,i=window.innerHeight;t.aspect=o,t.updateProjectionMatrix(),n.setSize(e,i)}function m(e,t){var n=document.createElement("canvas");n.width=n.height=t;var i=n.getContext("2d"),o=new THREE.Texture(n),r=t/2;return i.beginPath(),i.arc(r,r,t/2,0,2*Math.PI,!1),i.closePath(),i.fillStyle=e,i.fill(),o.needsUpdate=!0,o}function h(e){d=e.clientX-s/10,c=e.clientY-E/10}!function(){(i=document.createElement("div")).setAttribute("id","stars"),document.body.appendChild(i),r=window.innerHeight,a=window.innerWidth,o=a/r,75,100,1e3,d=0,c=0,s=a/2,E=r/2,(t=new THREE.PerspectiveCamera(75,o,100,1e3)).position.z=500,(e=new THREE.Scene({antialias:!0})).fog=new THREE.FogExp2(0,3e-4),e.background=new THREE.Color(267863),function(){l=new THREE.SphereGeometry(1e3,100,50);for(var t=new THREE.PointsMaterial({size:2,map:m("#ffffff",256),transparent:!0,depthWrite:!1,opacity:.5}),n=0;n<5e3;n++){var i=new THREE.Vector3;i.x=2e3*Math.random()-1e3,i.y=2e3*Math.random()-1e3,i.z=2e3*Math.random()-1e3,l.vertices.push(i)}u=new THREE.Points(l,t),e.add(u)}(),n=function(){try{var e=document.createElement("canvas");return!(!window.WebGLRenderingContext||!e.getContext("webgl")&&!e.getContext("experimental-webgl"))}catch(e){return!1}}()?new THREE.WebGLRenderer({alpha:!0}):new THREE.CanvasRenderer;n.setClearColor(17,1),n.setPixelRatio(window.devicePixelRatio),n.setSize(a,r),i.appendChild(n.domElement),window.addEventListener("resize",p,!1),document.addEventListener("mousemove",h,!1)}(),function i(){requestAnimationFrame(i);t.position.x+=.005*(d-t.position.x),t.position.y+=.005*(-c-t.position.y),t.lookAt(e.position),n.render(e,t);w.update()}()}();
+    </script>
+    <script>
+        var canvas=document.querySelector("#scene1"),ctx=canvas.getContext("2d"),particles=[],amount=0,mouse={x:0,y:0},radius=1,clicks=0,colors=["#ffffff","#ffffff","#a9e5f9","#f9bba9","#f9e5f8","#a9f9bb"],copy=document.querySelector("#copy1"),newcopy=document.querySelector("#copy2"),ww=canvas.width=window.innerWidth,wh=canvas.height=window.innerHeight;function Particle(t,e,i){"1"===i?(this.x=Math.random()*ww,this.y=Math.random()*wh):(this.x=t+10*Math.random(),this.y=e+10*Math.random()),this.dest={x:t,y:e},this.r=2*Math.random()+.5,this.vx=10*(Math.random()-.5),this.vy=10*(Math.random()-.5),this.accX=0,this.accY=0,this.friction=.75,this.color=colors[Math.floor(6*Math.random())]}function initScene(t="1"){ww=canvas.width=window.innerWidth,wh=canvas.height=window.innerHeight,ctx.clearRect(0,0,canvas.width,canvas.height),ctx.font="bold "+ww/8+"px VT323",ctx.textAlign="center","1"===t?(ctx.fillText("We're all stories,",ww/2,wh/2-.1*wh),ctx.fillText("in the end.",ww/2,wh/2+.1*wh)):(ctx.fillText("Just make it",ww/2,wh/2-.1*wh),ctx.fillText("a good one, eh?",ww/2,wh/2+.1*wh));var e=ctx.getImageData(0,0,ww,wh).data;ctx.clearRect(0,0,canvas.width,canvas.height),ctx.globalCompositeOperation="screen",particles=[];for(var i=0;i<ww;i+=Math.round(ww/150))for(var c=0;c<wh;c+=Math.round(ww/150))e[4*(i+c*ww)+3]>150&&particles.push(new Particle(i,c,t));amount=particles.length}function onMouseMove(t){mouse.x=t.clientX,mouse.y=t.clientY}function onTouchMove(t){t.touches.length>0&&(mouse.x=t.touches[0].clientX,mouse.y=t.touches[0].clientY)}function onTouchEnd(t){mouse.x=-9999,mouse.y=-9999}function onMouseClick(){initScene(++clicks%2==0||0==clicks?"1":"2")}function render(t){requestAnimationFrame(render),ctx.clearRect(0,0,canvas.width,canvas.height);for(var e=0;e<amount;e++)particles[e].render();ctx.font="italic "+ww/30+"px VT323",ctx.fillStyle="rgba(255, 255, 255, 0.5)",ctx.fillText("- The Doctor, 2010",ww-ww/4,wh/2+.3*wh)}Particle.prototype.render=function(){this.accX=(this.dest.x-this.x)/50,this.accY=(this.dest.y-this.y)/50,this.vx+=this.accX,this.vy+=this.accY,this.vx*=this.friction,this.vy*=this.friction,this.x+=this.vx,this.y+=this.vy,ctx.fillStyle=this.color,ctx.beginPath(),ctx.arc(this.x,this.y,this.r,2*Math.PI,!1),ctx.fill();var t=this.x-mouse.x,e=this.y-mouse.y;Math.sqrt(t*t+e*e)<70*radius&&(this.accX=(this.x-mouse.x)/5,this.accY=(this.y-mouse.y)/5,this.vx+=this.accX,this.vy+=this.accY)},copy.addEventListener("keyup",initScene),window.addEventListener("resize",initScene),window.addEventListener("click",onMouseClick),initScene("1"),requestAnimationFrame(render),window.setTimeout(onMouseClick,5e3);
+    </script>
+    <script>
+        !function(o){o(document).ready(function(){var i=o("#stars").position().top;o(window).scroll(function(){var t=o(window).scrollTop();o(document).height(),o(window).height();t>i?o("#stars").css({position:"fixed",top:"0px"}):o("#stars").css({position:"inherit"})})})}(jQuery);
+    </script>
     <!-- <script src="scripts/aos.js"></script>
     <script>
       AOS.init({
