@@ -149,7 +149,7 @@
 		/* 	Yep, it's a Star Wars: Knights of the Old Republic reference,
 			are you really surprised at this point? 
 													*/
-		var starQty = 45000;
+		var starQty = 5000;
             geometry = new THREE.SphereGeometry(1000,100,50);
             
             // var sprite = new THREE.TextureLoader().load( 'pics/circle.png' );
